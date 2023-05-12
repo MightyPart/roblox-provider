@@ -47,6 +47,10 @@ Roblox Provider Settings
 Defaults to `["name", "displayName", "avatar"]`.
 Valid values are `name`, `displayName`, `avatar`, `description`, `created` and `hasVerifiedBadge`.
 
+`redirectUri`: string - The url to redirect to.
+
+`checks`: array - The security checks to perform during OAuth. defaults to `['pkce', 'state']`. It is not advised to change this setting unless you know what you are doing.
+
 - - -
 
 If you want to add more callbacks as well you can do the following:
