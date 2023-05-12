@@ -48,7 +48,7 @@ export const RobloxProvider = (options: RobloxProviderOptions) => {
     clientId: CLIENT_ID,
     clientSecret: CLIENT_SECRET,
     scopes: SCOPES,
-    include: INCLUDE,
+    include: INCLUDE = ["name", "displayName", "avatar"],
     redirectUri: REDIRECT_URI,
     checks: CHECKS = ['pkce', 'state'],
     rest: REST,
