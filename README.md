@@ -41,7 +41,7 @@ Roblox Provider Settings
 
 `clientSecret`: string - Your roblox oauth2 client secret.
 
-`scopes`: array - The permissions that your oauth2 needs.
+`scopes`: array - The permissions that your oauth2 app needs.
 
 `include`: array - The data that will be saved to a session.
 Defaults to `["name", "displayName", "avatar"]`.
