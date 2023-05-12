@@ -59,7 +59,7 @@ export const authOptions = {
     ...RobloxProviderCallbacks_Jwt,
 
     // example of another callback
-    async redirect(params: { url: string, baseUrl: string }) {
+    async redirect() {
       return 
     },
   },
@@ -79,7 +79,7 @@ export const authOptions = {
   ...
 
   callbacks: {
-    async jwt({ token, user }: {token:any, user:any}) {
+    async jwt({ token, user }) {
       token = await RobloxProviderJwtCallback(token, user)
 
       // add your code here
@@ -87,7 +87,7 @@ export const authOptions = {
       return token
     },
   
-    async session({ session, token }: {session:any, token:any}) {
+    async session({ session, token }) {
       session = await RobloxProviderSessionCallback(session, token)
 
       // add your code here
