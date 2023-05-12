@@ -15,8 +15,6 @@ example usage:
 import { RobloxProvider, RobloxProviderCallbacks_Jwt } from "roblox-provider"
 
 export const authOptions = {
-  ...
-
   providers: [
     RobloxProvider({
       clientId: process.env.ROBLOX_ID,
@@ -26,9 +24,7 @@ export const authOptions = {
     })
   ],
 
-  callbacks: RobloxProviderCallbacks_Jwt,
-
-  ...
+  callbacks: RobloxProviderCallbacks_Jwt
 }
 ```
 (You can replace `RobloxProviderCallbacks_Jwt` with `RobloxProviderCallbacks_Database` if you are using database based sessions) 
@@ -45,7 +41,7 @@ Roblox Provider Settings
 
 `include`: array - The data that will be saved to a session.
 Defaults to `["name", "displayName", "avatar"]`.
-Valid values are `name`, `displayName`, `avatar`, `description`, `created` and `hasVerifiedBadge`.
+Valid values are `name`, `displayName`, `avatar`, `description`, `created` and `hasVerifiedBadge`. (the users RobloxID is always included so theres no need to define it here).
 
 `redirectUri`: string - The url to redirect to.
 
