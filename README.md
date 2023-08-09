@@ -19,6 +19,7 @@ export const authOptions = {
     RobloxProvider({
       clientId: process.env.ROBLOX_ID,
       clientSecret: process.env.ROBLOX_SECRET,
+      redirectUri: process.env.ROBLOX_REDIRECT,
       scopes: ["openid", "profile"],
       include: ["name", "displayName", "avatar"]
     })
