@@ -1,5 +1,6 @@
 {
   "name": "roblox-provider",
+  "type": "module",
   "description": "A Roblox OAuth2 provider for NextAuth.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
